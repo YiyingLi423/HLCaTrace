@@ -1,8 +1,26 @@
 # HLCaTrace
 
+[![Project Website](https://img.shields.io/badge/Project-Website-blue)](https://yiyingli423.github.io/HLCaTrace/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+
 HLCaTrace is an R package for calcium imaging trace analysis. It provides a reproducible workflow for F/F0 normalization, responding cell detection, timecourse summarization, and automated figure generation.
 
+## Project website
 
+A complete experimental and analytical walkthrough of the associated FEBS Letters study is available through the project website:
+
+https://yiyingli423.github.io/HLCaTrace/
+
+The website documents:
+
+- Experimental design logic
+- SERCA lockdown strategy
+- Live-cell calcium imaging workflow
+- ER Ca2+ uptake assays
+- Confocal imaging analysis
+- Fiji/ImageJ fluorescence extraction
+- Reproducible analysis using the HLCaTrace R package
+- Personal reflection and workflow development
 
 ## Background
 
@@ -10,18 +28,14 @@ HLCaTrace was developed from calcium signaling analysis workflows used in live-c
 
 The workflow is designed for single-cell calcium traces, where each column represents one cell and each row represents one imaging frame. The package was developed to improve reproducibility, scalability, and automation in calcium imaging analysis workflows that were previously performed manually in Excel.
 
-The workflow was developed during the following study:
+The package was developed as part of the live-cell calcium imaging analysis workflow used in the following study:
 
 Li, Y., & Hamada, K. (2026).  
 *Genetically encoded lockdown of SERCA in the endoplasmic reticulum membrane arrests Ca2+ signaling through proximity-covalent crosslinking*.  
-FEBS Letters.  
-https://doi.org/10.1002/1873-3468.70342
-        
-        
+*FEBS Letters*. Advance online publication.  
+DOI: [10.1002/1873-3468.70342](https://doi.org/10.1002/1873-3468.70342)
 
-
-
-## Experimental workflow
+## Experimental imaging workflow
 
 ### Imaging system
 
@@ -38,7 +52,7 @@ Typical acquisition settings:
 
 The workflow was developed using:
 
-- NCaMP7 (cytosolic calcium)
+- NCaMP7 for cytosolic calcium imaging
 
 ### Experimental stimulation
 
@@ -49,19 +63,21 @@ Typical stimulation conditions:
 
 Agonists were added at 30 sec after recording initiation.
 
-
-
 ## ROI extraction in Fiji/ImageJ
 
 Fluorescence traces were extracted manually in Fiji/ImageJ using ROI-based measurements.
 
 ### Example ROI selection
 
-![ROI Selection](Figures/ROI_selection.png)
+<div align="center">
+<img src="Figures/ROI_selection.png" width="500">
+</div>
 
 ### Example exported fluorescence CSV
 
-![CSV Example](Figures/CSV_structure.png)
+<div align="center">
+<img src="Figures/CSV_structure.png" width="500">
+</div>
 
 The package assumes:
 
@@ -75,8 +91,6 @@ A standard example dataset is included in:
 system.file("extdata", "raw_traces.csv", package = "HLCaTrace")
 ```
 
-
-
 ## Features
 
 - Import raw calcium imaging fluorescence traces
@@ -88,8 +102,6 @@ system.file("extdata", "raw_traces.csv", package = "HLCaTrace")
 - Generate individual trace plots
 - Generate mean ± SEM plots
 - Export analysis results as CSV and PDF files
-
-
 
 ## Installation
 
@@ -104,8 +116,6 @@ Then load the package:
 library(HLCaTrace)
 ```
 
----
-
 ## Basic usage
 
 ```r
@@ -119,19 +129,19 @@ results <- run_calcium_analysis(
 )
 ```
 
-
-
 ## Example output
 
 ### Mean ± SEM calcium response
 
-![Time-course Trace](Figures/Time-course_Trace.png)
+<div align="center">
+<img src="Figures/Time-course_Trace.png" width="700">
+</div>
 
 ### Individual calcium traces
 
-![Individual Traces](Figures/Individual_Traces.png)
-
-
+<div align="center">
+<img src="Figures/Individual_Traces.png" width="700">
+</div>
 
 ## Output files
 
@@ -147,8 +157,6 @@ calcium_analysis_mean_sem.pdf
 calcium_analysis_linear_regression_summary.csv
 ```
 
-
-
 ## Main functions
 
 | Function | Description |
@@ -161,18 +169,14 @@ calcium_analysis_linear_regression_summary.csv
 | `plot_mean_sem()` | Plot mean ± SEM trace |
 | `run_calcium_analysis()` | Run the full workflow |
 
-
-
 ## Citation
 
 If you use HLCaTrace in your research, please cite:
 
 Li, Y., & Hamada, K. (2026).  
 *Genetically encoded lockdown of SERCA in the endoplasmic reticulum membrane arrests Ca2+ signaling through proximity-covalent crosslinking*.  
-FEBS Letters.  
-https://doi.org/10.1002/1873-3468.70342
-
-
+*FEBS Letters*. Advance online publication.  
+DOI: [10.1002/1873-3468.70342](https://doi.org/10.1002/1873-3468.70342)
 
 ## License
 
