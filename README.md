@@ -2,7 +2,7 @@
 
 HLCaTrace is an R package for calcium imaging trace analysis. It provides a reproducible workflow for F/F0 normalization, responding cell detection, timecourse summarization, and automated figure generation.
 
----
+
 
 ## Background
 
@@ -16,8 +16,10 @@ Li, Y., & Hamada, K. (2026).
 *Genetically encoded lockdown of SERCA in the endoplasmic reticulum membrane arrests Ca2+ signaling through proximity-covalent crosslinking*.  
 FEBS Letters.  
 https://doi.org/10.1002/1873-3468.70342
+        
+        
 
----
+
 
 ## Experimental workflow
 
@@ -47,7 +49,7 @@ Typical stimulation conditions:
 
 Agonists were added at 30 sec after recording initiation.
 
----
+
 
 ## ROI extraction in Fiji/ImageJ
 
@@ -73,7 +75,7 @@ A standard example dataset is included in:
 system.file("extdata", "raw_traces.csv", package = "HLCaTrace")
 ```
 
----
+
 
 ## Features
 
@@ -87,7 +89,7 @@ system.file("extdata", "raw_traces.csv", package = "HLCaTrace")
 - Generate mean ± SEM plots
 - Export analysis results as CSV and PDF files
 
----
+
 
 ## Installation
 
@@ -117,7 +119,7 @@ results <- run_calcium_analysis(
 )
 ```
 
----
+
 
 ## Example output
 
@@ -129,7 +131,7 @@ results <- run_calcium_analysis(
 
 ![Individual Traces](Figures/Individual_Traces.png)
 
----
+
 
 ## Output files
 
@@ -145,7 +147,7 @@ calcium_analysis_mean_sem.pdf
 calcium_analysis_linear_regression_summary.csv
 ```
 
----
+
 
 ## Main functions
 
@@ -159,7 +161,7 @@ calcium_analysis_linear_regression_summary.csv
 | `plot_mean_sem()` | Plot mean ± SEM trace |
 | `run_calcium_analysis()` | Run the full workflow |
 
----
+
 
 ## Citation
 
@@ -170,7 +172,7 @@ Li, Y., & Hamada, K. (2026).
 FEBS Letters.  
 https://doi.org/10.1002/1873-3468.70342
 
----
+
 
 ## License
 
