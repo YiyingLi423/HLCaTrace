@@ -1,7 +1,7 @@
 # HLCaTrace
 
 [![Project Website](https://img.shields.io/badge/Project-Website-blue)](https://yiyingli423.github.io/HLCaTrace/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](LICENSE)
 
 HLCaTrace is an R package for calcium imaging trace analysis. It provides a reproducible workflow for F/F0 normalization, responding cell detection, timecourse summarization, and automated figure generation.
 
@@ -174,4 +174,4 @@ Li, Y., & Hamada, K. (2026). *Genetically encoded lockdown of SERCA in the endop
 
 ## License
 
-This project is licensed under the MIT License.
+This project is licensed under the GPL-3.0 License.
