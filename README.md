@@ -30,10 +30,7 @@ The workflow is designed for single-cell calcium traces, where each column repre
 
 The package was developed as part of the live-cell calcium imaging analysis workflow used in the following study:
 
-Li, Y., & Hamada, K. (2026).  
-*Genetically encoded lockdown of SERCA in the endoplasmic reticulum membrane arrests Ca2+ signaling through proximity-covalent crosslinking*.  
-*FEBS Letters*. Advance online publication.  
-DOI: [10.1002/1873-3468.70342](https://doi.org/10.1002/1873-3468.70342)
+Li, Y., & Hamada, K. (2026). *Genetically encoded lockdown of SERCA in the endoplasmic reticulum membrane arrests Ca2+ signaling through proximity-covalent crosslinking*. *FEBS Letters*. Advance online publication. DOI: [10.1002/1873-3468.70342](https://doi.org/10.1002/1873-3468.70342)
 
 ## Experimental imaging workflow
 
@@ -173,10 +170,7 @@ calcium_analysis_linear_regression_summary.csv
 
 If you use HLCaTrace in your research, please cite:
 
-Li, Y., & Hamada, K. (2026).  
-*Genetically encoded lockdown of SERCA in the endoplasmic reticulum membrane arrests Ca2+ signaling through proximity-covalent crosslinking*.  
-*FEBS Letters*. Advance online publication.  
-DOI: [10.1002/1873-3468.70342](https://doi.org/10.1002/1873-3468.70342)
+Li, Y., & Hamada, K. (2026). *Genetically encoded lockdown of SERCA in the endoplasmic reticulum membrane arrests Ca2+ signaling through proximity-covalent crosslinking*. *FEBS Letters*. Advance online publication. DOI: [10.1002/1873-3468.70342](https://doi.org/10.1002/1873-3468.70342)
 
 ## License
 
