@@ -1,0 +1,20 @@
+Package: HLCaTrace
+Title: Reproducible Calcium Imaging Trace Analysis Workflow
+Version: 0.1.0
+Authors@R: 
+    person(
+        "Yiying",
+        "Li",
+        email = "yiyingli423@gmail.com",
+        role = c("aut", "cre")
+    )
+Description: 
+    HLCaTrace is an R package for reproducible calcium imaging trace analysis.
+    The package provides workflows for F/F0 normalization, responding cell
+    detection, population timecourse summarization, and automated figure
+    generation from Fiji/ImageJ-exported fluorescence datasets.
+License: GPL-3
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+Config/roxygen2/version: 8.0.0
+
