@@ -154,7 +154,7 @@ results <- run_calcium_analysis(
 ### Individual calcium traces
 
 <div align="center">
-<img src="Figures/Individual_Traces.png" width="400">
+<img src="Figures/Individual_Traces.png" width="500">
 </div>
 
 ## Output files
