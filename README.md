@@ -58,6 +58,8 @@ Typical stimulation conditions:
 
 Agonists were added at 30 sec after recording initiation.
 
+These imaging conditions and timing parameters were used to define the default analysis settings implemented in HLCaTrace.
+
 ## ROI extraction in Fiji/ImageJ
 
 Fluorescence traces were extracted manually in Fiji/ImageJ using ROI-based measurements.
@@ -173,6 +175,12 @@ results <- run_calcium_analysis(
 The workflow automatically performs F/F0 normalization, peak response analysis, responding cell classification, population timecourse summarization, and figure generation.
 
 Analysis results and figures will be exported to the current R working directory.
+
+## Default analysis assumptions
+
+The default analysis parameters in HLCaTrace were optimized based on the experimental imaging workflow described above.
+
+These parameters can be manually adjusted for custom experimental conditions and imaging settings.
 
 ## Example output
 
