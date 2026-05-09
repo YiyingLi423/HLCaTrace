@@ -117,7 +117,7 @@ HLCaTrace requires R and the following package for GitHub installation:
 install.packages("devtools")
 ```
 
-### Windows users
+### System requirements
 
 Windows users may additionally require Rtools for source package installation.
 
@@ -126,6 +126,8 @@ Rtools can be downloaded from:
 https://cran.r-project.org/bin/windows/Rtools/
 
 After installing Rtools, restart RStudio before installing HLCaTrace.
+
+Most macOS users can install the package directly without additional system tools.
 
 ## Installation from GitHub
 
