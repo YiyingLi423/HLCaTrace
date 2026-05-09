@@ -62,16 +62,10 @@ Agonists were added at 30 sec after recording initiation.
 
 Fluorescence traces were extracted manually in Fiji/ImageJ using ROI-based measurements.
 
-### Example ROI selection
+Representative ROI selection in Fiji/ImageJ:
 
 <div align="center">
 <img src="Figures/ROI_selection.png" width="500">
-</div>
-
-### Example exported fluorescence CSV
-
-<div align="center">
-<img src="Figures/CSV_structure.png" width="500">
 </div>
 
 ## Input data format
@@ -83,6 +77,12 @@ HLCaTrace assumes the following CSV structure for calcium imaging fluorescence t
 - Rows = imaging frames
 
 The workflow was designed for single-cell calcium imaging datasets exported from Fiji/ImageJ ROI measurements.
+
+Representative exported fluorescence CSV:
+
+<div align="center">
+<img src="Figures/CSV_structure.png" width="500">
+</div>
 
 ## Included example dataset
 
