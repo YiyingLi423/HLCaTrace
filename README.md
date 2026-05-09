@@ -93,9 +93,10 @@ A standard example calcium imaging dataset (`raw_traces.csv`) is included for wo
 For simplified reproducibility testing, a `TESTPLACE` folder is also provided in this repository. The folder contains:
 
 - `raw_traces.csv`
-- example analysis workflow files
+- `example_analysis.R`
+- `TESTPLACE.Rproj`
 
-Users are encouraged to first test the workflow using the included example dataset before analyzing custom calcium imaging datasets.
+Users can directly run the provided `example_analysis.R` script inside the `TESTPLACE` folder to test the workflow.
 
 ## Features
 
