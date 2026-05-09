@@ -65,7 +65,7 @@ Fluorescence traces were extracted manually in Fiji/ImageJ using ROI-based measu
 Representative ROI selection in Fiji/ImageJ:
 
 <div align="center">
-<img src="Figures/ROI_selection.png" width="500">
+<img src="Figures/ROI_selection.png" width="400">
 </div>
 
 ## Input data format
