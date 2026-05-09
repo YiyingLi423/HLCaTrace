@@ -132,16 +132,47 @@ library(HLCaTrace)
 
 ## Basic usage
 
+### 1. Use the included example dataset
+
+A standard example dataset is included in the package. After loading HLCaTrace, users can access it directly in R:
+
 ```r
-results <- run_calcium_analysis(
-  file = "raw_traces.csv",
-  output_prefix = "calcium_analysis",
-  f0_range = 1:23,
-  peak_range = 57:128,
-  baseline_sd_range = 34:56,
-  total_time_sec = 120
+
+example_file <- system.file(
+  "extdata",
+  "raw_traces.csv",
+  package = "HLCaTrace"
 )
+
 ```
+
+### 2. Run the full analysis workflow
+
+```r
+
+results <- run_calcium_analysis(
+  file = example_file,
+  output_prefix = "calcium_analysis"
+)
+
+```
+
+### 3. Analyze your own dataset
+
+To analyze your own Fiji/ImageJ-exported fluorescence CSV file, replace `example_file` with your file path:
+
+```r
+
+results <- run_calcium_analysis(
+  file = "your_raw_traces.csv",
+  output_prefix = "my_analysis",
+)
+
+```
+
+The workflow automatically performs F/F0 normalization, peak response analysis, responding cell classification, population timecourse summarization, and figure generation.
+
+Analysis results and figures will be exported to the current R working directory.
 
 ## Example output
 
