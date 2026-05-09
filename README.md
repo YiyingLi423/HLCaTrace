@@ -74,17 +74,27 @@ Fluorescence traces were extracted manually in Fiji/ImageJ using ROI-based measu
 <img src="Figures/CSV_structure.png" width="500">
 </div>
 
-The package assumes:
+## Input data format
+
+HLCaTrace assumes the following CSV structure for calcium imaging fluorescence traces:
 
 - Column 1 = frame number
-- Remaining columns = individual cells
+- Remaining columns = individual cell fluorescence traces
 - Rows = imaging frames
 
-A standard example dataset is included in:
+The workflow was designed for single-cell calcium imaging datasets exported from Fiji/ImageJ ROI measurements.
+
+## Included example dataset
+
+A standard example dataset is included within the package for workflow testing and demonstration.
+
+The example dataset can be accessed using:
 
 ```r
 system.file("extdata", "raw_traces.csv", package = "HLCaTrace")
 ```
+
+Users are encouraged to first test the workflow using the included dataset before analyzing custom calcium imaging datasets.
 
 ## Features
 
@@ -98,10 +108,19 @@ system.file("extdata", "raw_traces.csv", package = "HLCaTrace")
 - Generate mean ± SEM plots
 - Export analysis results as CSV and PDF files
 
-## Installation
+## Requirements
+
+HLCaTrace requires R and the following package for GitHub installation:
 
 ```r
 install.packages("devtools")
+```
+
+## Installation
+
+Install HLCaTrace from GitHub using:
+
+```r
 devtools::install_github("YiyingLi423/HLCaTrace")
 ```
 
