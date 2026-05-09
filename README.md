@@ -148,13 +148,13 @@ results <- run_calcium_analysis(
 ### Mean ± SEM calcium response
 
 <div align="center">
-<img src="Figures/Time-course_Trace.png" width="700">
+<img src="Figures/Time-course_Trace.png" width="400">
 </div>
 
 ### Individual calcium traces
 
 <div align="center">
-<img src="Figures/Individual_Traces.png" width="700">
+<img src="Figures/Individual_Traces.png" width="400">
 </div>
 
 ## Output files
