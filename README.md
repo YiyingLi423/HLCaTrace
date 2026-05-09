@@ -16,8 +16,8 @@ This project contains two connected components:
 
    [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](LICENSE)
    
-   HLCaTrace is an R package for calcium imaging trace analysis. It provides a reproducible workflow for F/F0 normalization, responding cell detection, timecourse summarization, and automated figure
-   generation.
+   HLCaTrace is an R package for calcium imaging fluorescence trace analysis developed for use in the RStudio environment.
+   It provides a reproducible workflow for F/F0 normalization, responding cell detection, timecourse summarization, and automated figure generation.
 
    Package installation instructions, usage examples, and function documentation are provided in this README.
 ## Background
