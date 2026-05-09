@@ -1,27 +1,25 @@
-# HLCaTrace
+## Project structure
 
-[![Project Website](https://img.shields.io/badge/Project-Website-blue)](https://yiyingli423.github.io/HLCaTrace/)
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](LICENSE)
+This project contains two connected components:
 
-HLCaTrace is an R package for calcium imaging trace analysis. It provides a reproducible workflow for F/F0 normalization, responding cell detection, timecourse summarization, and automated figure generation.
+1. **Experimental project website**
+   
+   [![Project Website](https://img.shields.io/badge/Project-Website-blue)](https://yiyingli423.github.io/HLCaTrace/)
+   
+   A scientific website documenting the complete experimental logic, biological results, imaging workflow, and development process associated with the FEBS Letters study.
 
-## Project website
+   Experimental details, figures, imaging workflows, and scientific background are available at:
 
-A complete experimental and analytical walkthrough of the associated FEBS Letters study is available through the project website:
+   https://yiyingli423.github.io/HLCaTrace/
 
-https://yiyingli423.github.io/HLCaTrace/
+2. **HLCaTrace R package**
 
-The website documents:
+   [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](LICENSE)
+   
+   HLCaTrace is an R package for calcium imaging trace analysis. It provides a reproducible workflow for F/F0 normalization, responding cell detection, timecourse summarization, and automated figure
+   generation.
 
-- Experimental design logic
-- SERCA lockdown strategy
-- Live-cell calcium imaging workflow
-- ER Ca2+ uptake assays
-- Confocal imaging analysis
-- Fiji/ImageJ fluorescence extraction
-- Reproducible analysis using the HLCaTrace R package
-- Personal reflection and workflow development
-
+   Package installation instructions, usage examples, and function documentation are provided in this README.
 ## Background
 
 HLCaTrace was developed from calcium signaling analysis workflows used in live-cell fluorescence imaging experiments. The package converts previously Excel-based calcium imaging analysis steps into a reproducible R-based pipeline.
