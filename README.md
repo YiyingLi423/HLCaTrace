@@ -86,12 +86,12 @@ Representative exported fluorescence CSV:
 
 ## Included example dataset
 
-A standard example dataset is included within the package for workflow testing and demonstration.
+A standard example calcium imaging dataset (`raw_traces.csv`) is included within the package for workflow testing and demonstration.
 
-The example dataset can be accessed using:
+The dataset is located in:
 
-```r
-system.file("extdata", "raw_traces.csv", package = "HLCaTrace")
+```text
+inst/extdata/raw_traces.csv
 ```
 
 Users are encouraged to first test the workflow using the included dataset before analyzing custom calcium imaging datasets.
