@@ -178,9 +178,23 @@ Analysis results and figures will be exported to the current R working directory
 
 ## Default analysis assumptions
 
-The default analysis parameters in HLCaTrace were optimized based on the experimental imaging workflow described above.
+The default analysis parameters in HLCaTrace were optimized based on the experimental imaging workflow described above, including:
 
-These parameters can be manually adjusted for custom experimental conditions and imaging settings.
+- ~120 sec total recording duration
+- ~1.3 sec/frame acquisition speed
+- Agonist stimulation around 30 sec after recording initiation
+
+Accordingly, the default analysis frame ranges are:
+
+```r
+f0_range = 1:23
+baseline_sd_range = 1:23
+peak_range = 24:95
+```
+
+These default ranges are based on the cleaned normalized trace matrix rather than Excel worksheet row numbers.
+
+All parameters can be manually adjusted for custom experimental conditions and imaging settings.
 
 ## Example output
 
