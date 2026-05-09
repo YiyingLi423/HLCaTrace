@@ -88,15 +88,14 @@ Representative exported fluorescence CSV:
 
 ## Included example dataset
 
-A standard example calcium imaging dataset (`raw_traces.csv`) is included within the package for workflow testing and demonstration.
+A standard example calcium imaging dataset (`raw_traces.csv`) is included for workflow testing and demonstration.
 
-The dataset is located in:
+For simplified reproducibility testing, a `TESTPLACE` folder is also provided in this repository. The folder contains:
 
-```text
-inst/extdata/raw_traces.csv
-```
+- `raw_traces.csv`
+- example analysis workflow files
 
-Users are encouraged to first test the workflow using the included dataset before analyzing custom calcium imaging datasets.
+Users are encouraged to first test the workflow using the included example dataset before analyzing custom calcium imaging datasets.
 
 ## Features
 
@@ -118,9 +117,17 @@ HLCaTrace requires R and the following package for GitHub installation:
 install.packages("devtools")
 ```
 
-## Installation
+### Windows users
 
-Install HLCaTrace from GitHub using:
+Windows users may additionally require Rtools for source package installation.
+
+Rtools can be downloaded from:
+
+https://cran.r-project.org/bin/windows/Rtools/
+
+After installing Rtools, restart RStudio before installing HLCaTrace.
+
+## Installation from GitHub
 
 ```r
 devtools::install_github("YiyingLi423/HLCaTrace")
@@ -134,18 +141,14 @@ library(HLCaTrace)
 
 ## Basic usage
 
-### 1. Use the included example dataset
+### 1. Prepare the example dataset
 
-A standard example dataset is included in the package. After loading HLCaTrace, users can access it directly in R:
+Place your R script inside the `TESTPLACE` folder provided in this repository.
+
+Then define the example dataset path:
 
 ```r
-
-example_file <- system.file(
-  "extdata",
-  "raw_traces.csv",
-  package = "HLCaTrace"
-)
-
+example_file <- "raw_traces.csv"
 ```
 
 ### 2. Run the full analysis workflow
@@ -167,14 +170,14 @@ To analyze your own Fiji/ImageJ-exported fluorescence CSV file, replace `example
 
 results <- run_calcium_analysis(
   file = "your_raw_traces.csv",
-  output_prefix = "my_analysis",
+  output_prefix = "my_analysis"
 )
 
 ```
 
 The workflow automatically performs F/F0 normalization, peak response analysis, responding cell classification, population timecourse summarization, and figure generation.
 
-Analysis results and figures will be exported to the current R working directory.
+Analysis results and figures will be exported to the current working directory (e.g., the TESTPLACE folder).
 
 ## Default analysis assumptions
 
