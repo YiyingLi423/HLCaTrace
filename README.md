@@ -201,7 +201,7 @@ All parameters can be manually adjusted for custom experimental conditions and i
 ### Mean ± SEM calcium response
 
 <div align="center">
-<img src="Figures/Time-course_Trace.png" width="400">
+<img src="Figures/Time_Course_Trace.png" width="400">
 </div>
 
 ### Individual calcium traces
