@@ -95,6 +95,7 @@ For simplified reproducibility testing, a `TESTPLACE` folder is also provided in
 - `raw_traces.csv`
 - `example_analysis.R`
 - `TESTPLACE.Rproj`
+- `HLCaTrace_0.1.0.tar.gz`
 
 Users can directly run the provided `example_analysis.R` script inside the `TESTPLACE` folder to test the workflow.
 
@@ -130,7 +131,7 @@ After installing Rtools, restart RStudio before installing HLCaTrace.
 
 Most macOS users can install the package directly without additional system tools.
 
-## Installation from GitHub
+## Installation method 1: Install from GitHub
 
 ```r
 devtools::install_github("YiyingLi423/HLCaTrace")
@@ -140,6 +141,15 @@ Then load the package:
 
 ```r
 library(HLCaTrace)
+```
+## Installation method 2: Install from local source package
+
+This source package can be installed locally using:
+
+```r
+
+install.packages("HLCaTrace_0.1.0.tar.gz", repos = NULL, type = "source")
+
 ```
 
 ## Basic usage
