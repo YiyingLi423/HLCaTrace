@@ -192,3 +192,7 @@ Li, Y., & Hamada, K. (2026). *Genetically encoded lockdown of SERCA in the endop
 ## License
 
 This project is licensed under the GPL-3.0 License.
+
+## Additional information
+
+Additional information regarding AI-assisted development and writing is provided in `AI_USAGE_Declaration.md`.
